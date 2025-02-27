@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "school-blocks/school-address",
+  "version": "1.0.0",
+  "title": "School Address",
+  "category": "text",
+  "icon": "location",
+  "description": "Output the school address with an optional icon.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": true
+  },
+  "attributes": {
+    "svgIcon": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "school-blocks",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

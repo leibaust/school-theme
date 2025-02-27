@@ -1,0 +1,25 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "school-blocks/copyright",
+	"version": "0.1.0",
+	"title": "Copyright",
+	"category": "text",
+	"icon": "calendar",
+	"description": "Custom blocks for school site",
+	"example": {},
+	"supports": {
+		"html": false,
+		"align": true
+	},
+	"attributes": {
+		"startingYear": {
+			"type": "string",
+			"default": 2020
+		}
+	},
+	"textdomain": "school-blocks",
+	"editorScript": "file:./index.js",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}
