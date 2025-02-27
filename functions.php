@@ -1,6 +1,7 @@
 <?php
 
-function school_enqueues() {
+function school_enqueues()
+{
 
     if (is_front_page()) {
 
@@ -26,3 +27,8 @@ add_action('wp_enqueue_scripts', 'school_enqueues');
 
 // Load Custom Blocks
 require get_theme_file_path() . '/school-blocks/school-blocks.php';
+
+/**
+ * Include custom post types
+ */
+require get_template_directory() . '/inc/custom-post-types.php';
