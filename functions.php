@@ -1,7 +1,5 @@
 <?php
 
-
-
 function school_enqueues() {
 
     if (is_front_page()) {
@@ -24,6 +22,7 @@ function school_enqueues() {
     }
 };
 
-
-
 add_action('wp_enqueue_scripts', 'school_enqueues');
+
+// Load Custom Blocks
+require get_theme_file_path() . '/school-blocks/school-blocks.php';
