@@ -1,0 +1,57 @@
+<!-- wp:template-part {"slug":"header","area":"header"} /-->
+
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Staff</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Our experienced faculty brings years of hands-on experience in web development and design, ensuring that our students are equipped with cutting-edge skills and knowledge. From user experience designers to back-end engineers, our team covers every facet of web development and design to guide you through your learning journey. The administrative staff is here to provide seamless support, helping you focus on what matters most—mastering the art of coding and creating exceptional digital experiences. Explore below to meet the people who make us a thriving hub for innovation and growth!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Faculty</h2>
+<!-- /wp:heading -->
+
+<!-- wp:query {"queryId":31,"query":{"perPage":10,"pages":0,"offset":0,"postType":"staff","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"Grid"}} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"30px","left":"30px"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"shadow":"var:preset|shadow|outlined"},"backgroundColor":"primary","textColor":"white","layout":{"inherit":false}} -->
+<div class="wp-block-group has-white-color has-primary-background-color has-text-color has-background has-link-color" style="padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;box-shadow:var(--wp--preset--shadow--outlined)"><!-- wp:post-featured-image {"aspectRatio":"1","style":{"border":{"radius":"82px"}}} /-->
+
+<!-- wp:post-title /-->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:shortcode -->
+[acf field="position"]
+<!-- /wp:shortcode -->
+
+<!-- wp:shortcode -->
+[acf field="email"]
+<!-- /wp:shortcode -->
+
+<!-- wp:post-terms {"term":"department"} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Administrative</h2>
+<!-- /wp:heading -->
+
+<!-- wp:query {"queryId":31,"query":{"perPage":10,"pages":0,"offset":0,"postType":"staff","order":"asc","orderBy":"title","author":"","search":"","exclude":[],"sticky":"","inherit":false,"parents":[],"format":[]},"metadata":{"categories":["posts"],"patternName":"core/query-grid-posts","name":"Grid"}} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"30px","left":"30px"}},"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"shadow":"var:preset|shadow|outlined"},"backgroundColor":"primary","textColor":"white","layout":{"inherit":false}} -->
+<div class="wp-block-group has-white-color has-primary-background-color has-text-color has-background has-link-color" style="padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;box-shadow:var(--wp--preset--shadow--outlined)"><!-- wp:post-featured-image {"aspectRatio":"1","style":{"border":{"radius":"82px"}}} /-->
+
+<!-- wp:post-title /-->
+
+<!-- wp:post-terms {"term":"department"} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","area":"footer"} /-->
