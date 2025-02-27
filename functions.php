@@ -57,3 +57,36 @@ function school_custom_image_size_names($sizes)
         'student-profile-small' => __('Student Profile Small')
     ));
 }
+
+/**
+ * Enqueue AOS (Animate On Scroll) library
+ */
+function school_enqueue_aos()
+{
+    // Enqueue AOS CSS
+    wp_enqueue_style(
+        'aos-css',
+        'https://unpkg.com/aos@2.3.1/dist/aos.css',
+        array(),
+        '2.3.1'
+    );
+
+    // Enqueue AOS JS
+    wp_enqueue_script(
+        'aos-js',
+        'https://unpkg.com/aos@2.3.1/dist/aos.js',
+        array(),
+        '2.3.1',
+        true
+    );
+
+    // Enqueue AOS initialization
+    wp_enqueue_script(
+        'aos-init',
+        get_theme_file_uri('/assets/js/aos-init.js'),
+        array('aos-js'),
+        '1.0.0',
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'school_enqueue_aos');

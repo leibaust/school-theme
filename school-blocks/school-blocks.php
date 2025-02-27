@@ -11,6 +11,7 @@ function school_blocks_school_blocks_block_init()
 {
 	register_block_type(__DIR__ . '/build/copyright');
 	register_block_type(__DIR__ . '/build/school-address');
+	register_block_type(__DIR__ . '/build/aos-block');
 }
 add_action('init', 'school_blocks_school_blocks_block_init');
 
